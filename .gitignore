@@ -1,0 +1,58 @@
+# Compiled Lua sources
+luac.out
+
+# luarocks build files
+*.src.rock
+*.zip
+*.tar.gz
+
+# Object files
+*.o
+*.os
+*.ko
+*.obj
+*.elf
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+*.def
+*.exp
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Dota related stuff
+# Valve compiled format
+*.vpcf_c 
+*.vtex_c
+*.vsndevts_c
+*.vsnd_c
+*.vmat_c
+*.vjs_c
+*.vxml_c
+*.vcss_c
+
+# Misc
+*.bin
+panorama_debugger.cfg
+
+#VSCode
+.vscode
