@@ -1,0 +1,69 @@
+"addon"
+{
+	"DOTA_GoodGuys"   									"Player 1"
+	"DOTA_BadGuys"    									"Player 2"
+	"DOTA_Custom1"    									"Player 3"
+	"DOTA_Custom2"    									"Player 4"
+	"DOTA_Custom3"    									"Player 5"
+	"DOTA_Custom4"    									"Player 6"
+	"DOTA_Custom5"    									"Player 7"
+	"DOTA_Custom6"    									"Player 8"
+	"DOTA_Custom7"    									"Player 9"
+	"DOTA_Custom8"    									"Player 10"
+
+	"addonname"											"Monopoly"
+	"monopoly_game_info_header_objective"				"Objective:"
+	"monopoly_brief_description"						"Classic Monopoly game with all its fun with a little spice of Dota!"
+	"monopoly_game_info_header_how_to_play"				"How to play:"
+	"monopoly_game_info_throne"							"Choose your favorite little token and start playing!. \n Your hero gets an ability to throw dices when its your turn."
+	"EndTurnButton"										"End Turn"
+	
+	"PlayerMovedText"									"Player <font color='#70EA72'>{s:name}</font><br>has moved to <font color='#00abff'>{s:number}</font>"
+	
+	"BoughtStreetText"									"Player <font color='#70EA72'>{s:name}</font> has bought <font color='#00abff'>{s:street}({s:number})</font> for <font color='#ffe700'>{s:gold}</font> gold!"
+	
+	"StreetInfoHouseText"								"<font color='#00abff'>{s:name}</font><br>
+														 Price: <font color='#ffe700'>{s:price}</font><br>
+														 Rent: <font color='#ffe700'>{s:rent}</font><br>
+														 1 Ward: <font color='#ffe700'>{s:house1}</font><br>
+														 2 Wards: <font color='#ffe700'>{s:house2}</font><br>
+														 3 Wards: <font color='#ffe700'>{s:house3}</font><br>
+														 4 Wards: <font color='#ffe700'>{s:house4}</font><br>
+														 5 Wards: <font color='#ffe700'>{s:house5}</font><br>
+														 Mortgage Value: <font color='#ffe700'>{s:mortgage}</font><br>
+														 Ward Cost:	<font color='#ffe700'>{s:building_cost}</font><br>
+														 Parent Heroes:<br> <font color='#ffe700'>{s:link1}<br>{s:link2}<br>{s:link3}</font>"
+	
+	"StreetInfoNoHouseText"								"<font color='#00abff'>{s:name}</font><br>
+														 Price: <font color='#ffe700'>{s:price}</font><br>
+														 1 Part: <font color='#ffe700'>{s:rent1}</font><br>
+														 2 Parts: <font color='#ffe700'>{s:rent2}</font><br>
+														 3 Parts: <font color='#ffe700'>{s:rent3}</font><br>
+														 4 Parts: <font color='#ffe700'>{s:rent4}</font><br>
+														 Mortgage Value: <font color='#ffe700'>{s:mortgage}</font><br>
+														 Parent Heroes:<br> <font color='#ffe700'>{s:link1}<br>{s:link2}<br>{s:link3}</font>"
+	
+	"CommunityEventTitle"								"Community Event!"
+	"CommunityEventPlayer"								"{s:name}!!!"
+	"CommunityEventText"								"Our lovely player <font color='#70EA72'>{s:name}</font>"
+	
+	"CommunityEvent_Move"								"Gets a road trip 3 streets forward!"
+	"CommunityEvent_Jump"								"Recieves a plane trip to street 14!"
+	"CommunityEvent_Take"								"Gets to give to our beloved bank 200 gold!"
+	"CommunityEvent_Give"								"Receives from our beloved bank 200 gold!"
+	"CommunityEvent_TakeFromPlayers"					"Gets 50 gold from each player!"
+	"CommunityEvent_GiveToPlayers"						"Gives 50 gold to each player!"
+	"CommunityEvent_Jail"								"Is sent to jail!"
+	
+	"PanelOverlayTitle"									"Trade window"
+	"LocalPlayerOffersText"								"Your items"
+	"TargetPlayerOffersText"							"His items"
+	"TitleNameText"										"Start trade with {s:playerName}"
+	"AcceptText"										"Send Trade"
+	"CancelText"										"Cancel Trade"
+	"AcceptOfferText"									"Accept Offer"
+	"DeclineOfferText"									"Decline Offer"
+	"TradeOfferPanelText"								"You recieve a trade offer from {s:playerName}!"
+	
+	"undefined"											"none"
+}

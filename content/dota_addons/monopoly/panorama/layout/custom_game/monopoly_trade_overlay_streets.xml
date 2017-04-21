@@ -1,0 +1,14 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/custom_game/monopoly_trade_overlay.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/monopoly_trade_overlay_streets.js" />
+	</scripts>
+
+	<Panel class="StreetPanelOverlay">
+		<Button id="SteetOverlay" onactivate="SelectStreet()">
+			<Label hittest="false" id="StreetOverlay_Name" text="#StreetOverlayName"/>
+		</Button>
+	</Panel>
+</root>

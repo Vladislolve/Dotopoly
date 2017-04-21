@@ -1,0 +1,165 @@
+.MonopolyTradeOverlay
+{
+	width: 100%;
+	height: 100%;
+}
+
+#Accept
+{
+	color: white;
+	background-color: black;
+	margin-right: 5px;
+}
+
+#Cancel
+{
+	color: white;
+	background-color: black;
+}
+
+#TradeTitle
+{
+	flow-children: down;
+	horizontal-align: right;
+	transform: scaleX(1) scaleY(1);
+	margin-top: 150px;
+	margin-right: 0px;
+	text-shadow: 30px 30px 30px #121212;
+	background-color: #333333B0;
+	opacity: 0;
+	visibility: collapse;
+}
+
+#TitleName_Text
+{
+	color: yellow;
+	font-size: 20;
+}
+
+.trade_start_overlay #TradeTitle
+{
+	opacity: 1;
+	transform: scaleX(1) scaleY(1);
+	visibility: visible;
+}
+
+
+#PanelOverlay
+{
+	flow-children: right;
+	horizontal-align: right;
+	transform: scaleX(1) scaleY(1);
+	margin-top: 150px;
+	margin-right: 400px;
+	text-shadow: 15px 15px 15px #121212;
+	background-color: #333333B0;
+	opacity: 0;
+	visibility: visible;
+}
+
+#PanelOverlay_Title
+{
+	color: white;
+	font-size: 20;
+}
+
+#LocalPlayerItems
+{
+	flow-children: down;
+	color:white;
+	font-size:15;
+	margin-top: 25px;
+}
+
+#TargetPlayerItems
+{
+	flow-children: down;
+	color: white;
+	font-size: 15;
+	margin-top: 25px;
+	
+}
+
+
+.show_trade_panel_overlay #PanelOverlay
+{
+	opacity: 1;
+	transform: scaleX(1) scaleY(1);
+	visibility: visible;
+}
+
+#StreetOverlay
+{
+	flow-children: left;
+	margin-top: 150px;
+	margin-right: 400px;
+	opacity: 1;
+	visibility: visible;
+
+}
+
+#StreetOverlay_Name
+{
+	horizontal-align: left;
+	font-size: 15;
+	visibility: visible; 
+	margin-top: 5px;
+	margin-right: 50px;
+	color: red;
+
+}
+
+#TradeOfferPanel
+{
+	opacity: 0;
+	font-size: 20;
+	flow-children: right;
+	horizontal-align: right;
+	margin-top: 400px;
+	margin-right: 100px;
+	background-color: #333333B0;
+	visibility: visible;
+}
+
+#LocalPlayerOffers
+{
+	flow-children: down;
+	margin-right: 10px;
+	margin-top: 20px;
+	color: white;
+}
+
+#TargetPlayerOffers
+{
+	flow-children: down;
+	margin-left: 10px;
+	margin-top: 20px;
+	color: white;
+}
+
+#AcceptOffer
+{
+	background-color: black;
+	color: white;
+	margin-right: 5px;
+}
+
+#DeclineOFfer
+{
+	background-color: black;
+	color: white;
+}
+
+#TradeOfferPanel_Text
+{
+	color: white;
+	font-size: 15px;
+}
+
+.show_trade_offer_panel #TradeOfferPanel
+{
+	opacity: 1;
+	transform: scaleX(1) scaleY(1);
+	visibility: visible;
+
+}

@@ -1,0 +1,1416 @@
+// Units File
+"DOTAUnits"
+{
+	"Version"	"1"
+	"player_house"
+	{
+		"BaseClass"					"npc_dota_creature"	// Class of entity of link to.
+		"Model"						"models/heroes/venomancer/venomancer_ward.vmdl"	// Model.
+		"SoundSet"					"Hero_VenomancerWard"					// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+
+		// Abilities
+		//---------------------------------------------------------------
+		"Ability1"					""				// Ability 1.
+		"Ability2"					""	 			// Ability 2.
+		"Ability3"					""				// Ability 3.
+		"Ability4"					""				// Ability 4.
+		"Ability5"					""				// Ability 5.
+
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"			// Team name.
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_WARD"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"1200"		// Range of vision during day light.
+		"VisionNighttimeRange"		"800"		// Range of vision at night time.
+		
+		//Inventory
+		"HasInventory"				"0"
+		
+	}
+
+	"npc_monopoly_house"
+	{
+		"BaseClass"					"npc_dota_creature"	// Class of entity of link to.
+		"Model"						"models/items/wards/f2p_ward/f2p_ward.vmdl"		// Model.
+		"SoundSet"					"Hero_VenomancerWard"					// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+
+		// Abilities
+		//---------------------------------------------------------------
+		"Ability1"					""				// Ability 1.
+		"Ability2"					""	 			// Ability 2.
+		"Ability3"					""				// Ability 3.
+		"Ability4"					""				// Ability 4.
+		"Ability5"					""				// Ability 5.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"			// Team name.
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_WARD"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"1200"		// Range of vision during day light.
+		"VisionNighttimeRange"		"800"		// Range of vision at night time.
+		
+		//Inventory
+		"HasInventory"				"0"
+
+	}
+
+	"npc_monopoly_roshan"
+	{
+		"Model"						"models/creeps/roshan/roshan.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"Level"						"200"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+		
+	}
+	
+	// TOKENS --------------------------------------------------------------------------------------------
+	
+	"npc_monopoly_token_wolf"
+	{
+		// General
+		//----------------------------------------------------------------------
+		"Model"						"models/heroes/lycan/summon_wolves.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"Level"						"1"
+		
+		// Abilities
+		//--------------------------------------------------------------------------
+		"Ability1"					""
+		"Ability2"					""
+		"Ability3"					""
+		"Ability4"					""
+		
+		// Movement
+		//---------------------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"600"
+		"MovementTurnRate"			"1"
+		
+	}
+	
+	"npc_monopoly_token_drodo"
+	{
+		// General
+		//----------------------------------------------------------------------
+		"Model"						"models/courier/drodo/drodo.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"Level"						"1"
+		
+		// Abilities
+		//--------------------------------------------------------------------------
+		"Ability1"					""
+		"Ability2"					""
+		"Ability3"					""
+		"Ability4"					""
+		
+		// Movement
+		//---------------------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"600"
+		"MovementTurnRate"			"1"
+		
+	}
+	
+	"npc_monopoly_token_f2p"
+	{
+		// General
+		//----------------------------------------------------------------------
+		"Model"						"models/courier/f2p_courier/f2p_courier.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"Level"						"1"
+		
+		// Abilities
+		//--------------------------------------------------------------------------
+		"Ability1"					""
+		"Ability2"					""
+		"Ability3"					""
+		"Ability4"					""
+		
+		// Movement
+		//---------------------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"600"
+		"MovementTurnRate"			"1"
+		
+	}
+
+	"npc_monopoly_token_bear"
+	{
+		// General
+		//----------------------------------------------------------------------
+		"Model"						"models/heroes/lone_druid/spirit_bear.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"Level"						"1"
+		"ModelScale"				"0.7"
+		
+		// Abilities
+		//--------------------------------------------------------------------------
+		"Ability1"					""
+		"Ability2"					""
+		"Ability3"					""
+		"Ability4"					""
+		
+		// Movement
+		//---------------------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"600"
+		"MovementTurnRate"			"1"
+		
+	}
+
+
+	"npc_monopoly_token_stump"
+	{
+		// General
+		//----------------------------------------------------------------------
+		"Model"						"models/courier/stump/stump.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"Level"						"1"
+		
+		// Abilities
+		//--------------------------------------------------------------------------
+		"Ability1"					""
+		"Ability2"					""
+		"Ability3"					""
+		"Ability4"					""
+		
+		// Movement
+		//---------------------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"600"
+		"MovementTurnRate"			"1"
+		
+	}	
+
+	"npc_monopoly_token_trapjaw"
+	{
+		// General
+		//----------------------------------------------------------------------
+		"Model"						"models/courier/trapjaw/trapjaw.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"Level"						"1"
+		
+		// Abilities
+		//--------------------------------------------------------------------------
+		"Ability1"					""
+		"Ability2"					""
+		"Ability3"					""
+		"Ability4"					""
+		
+		// Movement
+		//---------------------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"600"
+		"MovementTurnRate"			"1"
+		
+	}	
+	// END OF TOKENS ----------------------------------------------------------------------------------------
+	
+	// REAL ESTATES / STREETS -------------------------------------------------------------------------------
+	
+	"npc_monopoly_estate_cm"
+	{
+		"BaseClass"					"npc_dota_creature"	// Class of entity of link to.
+		"Model"						"models/heroes/crystal_maiden/crystal_maiden.vmdl"	// Model.
+		"SoundSet"					"Hero_VenomancerWard"					// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_estate"				// Ability 1.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"450"		// Base health.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"			// Team name.
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"1200"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"		// Range of vision at night time.
+		
+		//Inventory
+		"HasInventory"				"1"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{ "ItemDef" "41" }
+				"Wearable2"	{ "ItemDef"	"40" }
+				"Wearable3" { "ItemDef"	"39" }
+				"Wearable4" { "ItemDef"	"38" }
+				"Wearable5"	{ "ItemDef" "311" }
+			}
+		}
+	}
+	
+	"npc_monopoly_estate_lina"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/lina/lina.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+
+		"Ability1"					"buy_estate"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+		
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{ "ItemDef" "318" }
+				"Wearable2"	{ "ItemDef"	"319" }
+				"Wearable3" { "ItemDef"	"320" }
+				"Wearable4" { "ItemDef"	"321" }
+			}
+		}
+		
+	}
+	
+	"npc_monopoly_estate_earth_spirit"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/earth_spirit/earth_spirit.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_estate"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+		
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{ "ItemDef" "475" }
+				"Wearable2"	{ "ItemDef"	"477" }
+				"Wearable3" { "ItemDef"	"479" }
+				"Wearable4" { "ItemDef"	"480" }
+				"Wearable5"	{ "ItemDef" "481" }
+				"Wearable6"	{ "ItemDef"	"482" }
+			}
+		}
+		
+	}	
+
+	"npc_monopoly_estate_ember_spirit"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/ember_spirit/ember_spirit.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_estate"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+		
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{ "ItemDef" "5878" }
+				"Wearable2"	{ "ItemDef"	"474" }
+				"Wearable3" { "ItemDef"	"473" }
+				"Wearable4" { "ItemDef"	"472" }
+				"Wearable5"	{ "ItemDef" "471" }
+				"Wearable6"	{ "ItemDef"	"469" }
+				"Wearable7"	{ "ItemDef" "462" }
+			}
+		}
+		
+	}
+
+	"npc_monopoly_estate_storm_spirit"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/storm_spirit/storm_spirit.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_estate"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+		
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{ "ItemDef" "310" }
+				"Wearable2"	{ "ItemDef"	"309" }
+				"Wearable3" { "ItemDef"	"308" }
+			}
+		}
+		
+	}
+
+	"npc_monopoly_estate_brewmaster_earth"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/brewmaster/brewmaster_earthspirit.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_estate"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+		
+	}
+
+	"npc_monopoly_estate_brewmaster_fire"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/brewmaster/brewmaster_firespirit.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_estate"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+		
+	}
+
+	"npc_monopoly_estate_brewmaster_wind"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/brewmaster/brewmaster_windspirit.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_estate"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+		
+	}
+	
+	"npc_monopoly_estate_phoenix"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/phoenix/phoenix_bird.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_estate"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+		
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable2"	{ "ItemDef"	"592" }
+
+			}
+		}
+		
+	}
+
+	"npc_monopoly_estate_io"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/wisp/wisp.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_estate"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+		
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{ "ItemDef" "536" }
+			}
+		}
+		
+	}
+
+	"npc_monopoly_estate_tiny_left_arm"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/tiny_04/tiny_04_left_arm.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_no_house_street"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+	}
+
+	"npc_monopoly_estate_tiny_right_arm"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/tiny_04/tiny_04_right_arm.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_no_house_street"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+	}
+
+	"npc_monopoly_estate_tiny_body"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/tiny_04/tiny_04_body.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_no_house_street"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+	}
+
+	"npc_monopoly_estate_tiny_head"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/tiny_04/tiny_04_head.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_no_house_street"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+	}
+
+	"npc_monopoly_estate_tiny"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/tiny_01/tiny_01.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_no_house_street"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{ "ItemDef"	"493" }
+				"Wearable2"	{ "ItemDef" "494" }
+				"Wearable2"	{ "ItemDef" "495" }
+				"Wearable2"	{ "ItemDef" "496" }
+			}
+		}
+	}
+	"npc_monopoly_estate_witch_doctor"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/witchdoctor/witchdoctor.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_estate"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{ "ItemDef" "97" }
+				"Wearable2"	{ "ItemDef" "96" }
+				"Wearable3"	{ "ItemDef" "95" }
+				"Wearable4"	{ "ItemDef" "94" }
+			}
+		}
+	}
+
+	"npc_monopoly_estate_dazzle"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/dazzle/dazzle.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_estate"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{ "ItemDef" "10403" }
+				"Wearable2"	{ "ItemDef" "468" }
+				"Wearable3"	{ "ItemDef" "263" }
+				"Wearable4"	{ "ItemDef" "266" }
+				"Wearable5"	{ "ItemDef" "264" }
+				"Wearable6"	{ "ItemDef" "265" }
+
+			}
+		}
+	}
+
+	"npc_monopoly_estate_dark_seer"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/dark_seer/dark_seer.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_estate"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{ "ItemDef" "350" }
+				"Wearable2"	{ "ItemDef" "348" }
+				"Wearable3"	{ "ItemDef" "349" }
+				"Wearable4"	{ "ItemDef" "352" }
+				"Wearable5"	{ "ItemDef" "351" }
+			}
+		}
+	}
+
+	"npc_monopoly_estate_medusa"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/medusa/medusa.vmdl"		// Model.
+		"SoundSet"					""										// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_estate"							// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"				// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"				// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"									// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"					// Team name.
+
+		"VisionDaytimeRange"		"1200"									// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"									// Range of vision at night time.
+
+		"HasInventory"				"1"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{ "ItemDef" "385" }
+				"Wearable2"	{ "ItemDef" "384" }
+				"Wearable3"	{ "ItemDef" "381" }
+				"Wearable4"	{ "ItemDef" "383" }
+				"Wearable5"	{ "ItemDef" "382" }
+			}
+		}
+	}
+
+	"npc_monopoly_estate_slark"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/slark/slark.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_estate"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{ "ItemDef" "336" }
+				"Wearable2"	{ "ItemDef" "354" }
+				"Wearable3"	{ "ItemDef" "356" }
+				"Wearable4"	{ "ItemDef" "355" }
+				"Wearable5"	{ "ItemDef" "353" }
+			}
+		}
+	}
+
+	"npc_monopoly_estate_naga_siren"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/siren/siren.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_estate"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{ "ItemDef" "194" }
+				"Wearable2"	{ "ItemDef" "193" }
+				"Wearable3"	{ "ItemDef" "192" }
+				"Wearable4"	{ "ItemDef" "191" }
+				"Wearable5"	{ "ItemDef" "312" }
+			}
+		}
+	}
+
+	"npc_monopoly_estate_antimage"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/antimage/antimage.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_estate"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{ "ItemDef" "217" }
+				"Wearable2"	{ "ItemDef" "218" }
+				"Wearable3"	{ "ItemDef" "216" }
+				"Wearable4"	{ "ItemDef" "215" }
+				"Wearable5"	{ "ItemDef" "335" }
+				"Wearable6"	{ "ItemDef" "1" }
+			}
+		}
+	}
+
+	"npc_monopoly_estate_spectre"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/spectre/spectre.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"0.8"
+		
+		"Ability1"					"buy_estate"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{ "ItemDef" "324" }
+				"Wearable2"	{ "ItemDef" "323" }
+				"Wearable3"	{ "ItemDef" "395" }
+				"Wearable4"	{ "ItemDef" "325" }
+			}
+		}
+	}
+
+	"npc_monopoly_estate_terrorblade"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/terrorblade/terrorblade.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_estate"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{ "ItemDef" "476" }
+				"Wearable2"	{ "ItemDef" "478" }
+				"Wearable3"	{ "ItemDef" "307" }
+				"Wearable4"	{ "ItemDef" "306" }
+			}
+		}
+	}
+
+	"npc_monopoly_estate_sniper"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/sniper/sniper.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_estate"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{ "ItemDef" "285" }
+				"Wearable2"	{ "ItemDef" "282" }
+				"Wearable3"	{ "ItemDef" "283" }
+				"Wearable4"	{ "ItemDef" "284" }
+				"Wearable5"	{ "ItemDef" "281" }
+			}
+		}
+	}
+
+	"npc_monopoly_estate_weaver"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/weaver/weaver.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_estate"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{ "ItemDef" "279" }
+				"Wearable2"	{ "ItemDef" "277" }
+				"Wearable3"	{ "ItemDef" "280" }
+				"Wearable4"	{ "ItemDef" "278" }
+			}
+		}
+	}
+
+	"npc_monopoly_estate_bounty_hunter"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/bounty_hunter/bounty_hunter.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_estate"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{ "ItemDef" "55" }
+				"Wearable2"	{ "ItemDef" "52" }
+				"Wearable3"	{ "ItemDef" "54" }
+				"Wearable4"	{ "ItemDef" "51" }
+				"Wearable5"	{ "ItemDef" "50" }
+				"Wearable6"	{ "ItemDef" "53" }
+			}
+		}
+	}
+
+	"npc_monopoly_estate_keeper_of_the_light"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/keeper_of_the_light/keeper_of_the_light.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_no_house_street"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{ "ItemDef" "252" }
+				"Wearable2"	{ "ItemDef" "253" }
+				"Wearable3"	{ "ItemDef" "254" }
+				"Wearable4"	{ "ItemDef" "255" }
+				"Wearable5"	{ "ItemDef" "256" }
+			}
+		}
+	}
+
+
+	"npc_monopoly_community_chest"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/courier/minipudge/minipudge.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					""						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+	}
+
+	"npc_monopoly_secret"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/ogre_magi/ogre_magi.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					""						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{ "ItemDef" "136" }
+				"Wearable2"	{ "ItemDef" "134" }
+				"Wearable3"	{ "ItemDef" "133" }
+				"Wearable4"	{ "ItemDef" "135" }
+				"Wearable5"	{ "ItemDef" "105" }
+			}
+		}
+	}
+	
+	"npc_monopoly_income_tax"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/shopkeeper/shopkeeper.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					""						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"300"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+	}
+
+	"npc_monopoly_luxury_tax"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/shopkeeper_dire/shopkeeper_dire.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					""						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+	}
+
+
+	"npc_monopoly_estate_phantom_lancer"
+	{
+		"BaseClass"					"npc_dota_creature"						// Class of entity of link to.
+		"Model"						"models/heroes/phantom_lancer/phantom_lancer.vmdl"		// Model.
+		"SoundSet"					""									// Name of sound set.
+		"Level"						"1"
+		"ModelScale" 				"1"
+		
+		"Ability1"					"buy_no_house_street"						// Ability 1.
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+		"StatusHealth"				"450"								// Base health.
+
+		"TeamName"					"DOTA_TEAM_NEUTRALS"				// Team name.
+
+		"VisionDaytimeRange"		"1200"								// Range of vision during day light.
+		"VisionNighttimeRange"		"1200"								// Range of vision at night time.
+
+		"HasInventory"				"1"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"	{ "ItemDef" "132" }
+				"Wearable2"	{ "ItemDef" "127" }
+				"Wearable3"	{ "ItemDef" "129" }
+				"Wearable4"	{ "ItemDef" "130" }
+				"Wearable5"	{ "ItemDef" "128" }
+			}
+		}
+	}
+	// END OF REAL ESTATES
+}

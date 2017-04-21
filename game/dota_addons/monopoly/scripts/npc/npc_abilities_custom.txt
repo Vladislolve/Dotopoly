@@ -1,0 +1,282 @@
+// Dota Heroes File
+"DOTAAbilities"
+{
+	"Version"		"1"
+	// buy_estate is the same for all estate buildings, but its values changes depending on which building it is (inside Lua with kv)
+	"buy_estate"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass" 					"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_NONE"
+		"AbilityTextureName"			"earth_spirit_petrify"
+
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0.0 0.0 0.0 0.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		//"AbilityGoldCost"				"100"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"			"abilities.lua"
+				"Function"				"BuyEstate"
+			}
+		}
+	}
+	"buy_house"
+	{
+		"BaseClass"					"ability_datadriven"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"		"DAMAGE_TYPE_NONE"
+		"MaxLevel"					"5"
+		"AbilityTextureName"		"alchemist_goblins_greed"
+
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"abilities.lua"
+				"Function"		"BuyHouse"
+			}
+		}
+	}
+
+	"auction_estate"
+	{
+		"BaseClass"             	"ability_datadriven"
+		"MaxLevel" 					"1"
+		"AbilityUnitDamageType"		"DAMAGE_TYPE_NONE"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityTextureName"		""
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"abilities.lua"
+				"Function"			"buyback"
+			}
+		}
+
+	}
+
+	"mortgage_street"
+	{
+		"BaseClass"             	"ability_datadriven"
+		"MaxLevel" 					"1"
+		"AbilityUnitDamageType"		"DAMAGE_TYPE_NONE"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityTextureName"		"mortgage_street"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"abilities.lua"
+				"Function"			"MortgageStreet"
+			}
+		}
+	}
+
+	"lift_mortgage"
+	{
+		"BaseClass"             	"ability_datadriven"
+		"MaxLevel" 					"1"
+		"AbilityUnitDamageType"		"DAMAGE_TYPE_NONE"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityTextureName"		"lift_mortgage"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"abilities.lua"
+				"Function"			"LiftMortgage"
+			}
+		}
+	}
+
+	"spawn_token"
+	{
+		"BaseClass"					"ability_datadriven"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"		"DOTA_UNIT_TARGET_TEAM_BOTH | DOTA_UNIT_TARGET_TEAM_CUSTOM"
+		"AbilityUnitTargetType"		"DOTA_UNIT_TARGET_BUILDING"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_INVULNERABLE | DOTA_UNIT_TARGET_FLAG_NONE"
+		"MaxLevel"					"1"
+		"AbilityType"          	    "DOTA_ABILITY_TYPE_BASIC"
+		"AbilityTextureName"		"courier_transfer_items"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"abilities.lua"
+				"Function"		"SpawnToken"
+
+			}
+			"RemoveAbility"
+			{	
+				"Target"		"CASTER"
+				"AbilityName"	"spawn_token"
+			}
+		}
+	}
+	
+	"throw_dice"
+	{
+		"BaseClass"				"ability_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"MaxLevel"				"1"
+		"AbilityCooldown"		"2"
+		"AbilityTextureName"	"talisman_of_evasion"
+
+		"precache"
+		{
+       	 	"soundfile" 		"soundevents/game_sounds_heroes/game_sounds_legion_commander.vsndevts"
+		}
+		"OnSpellStart"
+		{
+			"FireSound"
+			{
+           		"EffectName"	"Hero_LegionCommander.Duel.Victory"
+				"Target"		"CASTER"
+			}
+			"RemoveAbility"
+			{
+				"Target" 		"CASTER"
+				"AbilityName"	"throw_dice"
+			}
+
+			"RunScript"
+			{
+				"ScriptFile"	"abilities.lua"
+				"Function"		"CheckStatus"
+			}
+
+			"RunScript"
+			{
+				"ScriptFile"	"abilities.lua"
+				"Function"		"ThrowDice"
+			}
+		}
+	}
+
+	"pay_tax"
+	{
+		"BaseClass"				"ability_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"MaxLevel"				"1"
+		"AbilityGoldCost"		"200"
+		"AbilityTextureName"	"alchemist_goblins_greed"
+		
+		"OnSpellStart"
+		{
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName" 	"pay_tax"
+			}
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName" 	"pay_worth"
+			}			
+			//"RunScript"
+			//{
+			//	"ScriptFile"	"abilities.lua"
+			//	"Function"		"ThrowDice"
+			//}
+
+		}
+	}
+
+	"pay_worth"
+	{
+		"BaseClass"				"ability_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"MaxLevel"				"1"
+		"OnSpellStart"
+		{
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName" 	"pay_tax"
+			}
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName" 	"pay_worth"
+			}			
+			"RunScript"
+			{
+				"ScriptFile"	"special_events.lua"
+				"Function"		"PayTaxWorth"
+			}
+		}
+	}
+
+	"jail_dice"
+	{
+		"BaseClass"				"ability_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"MaxLevel"				"1"
+		"OnSpellStart"
+		{
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"	"jail_dice"
+			}
+			"RunScript"
+			{
+				"ScriptFile"	"abilities.lua"
+				"Function"		"JailDice"
+			}
+		}
+	}
+	
+	"buy_no_house_street"
+	{
+		"BaseClass"				"ability_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"MaxLevel"				"1"
+
+		"OnSpellStart"
+		{
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"	"buy_no_house_street"
+			}
+			"RunScript"
+			{
+				"ScriptFile"	"abilities.lua"
+				"Function"		"BuyNoHouseStreet"
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+monopoly_map
+{
+	material materials/overviews/monopoly_map.vmat
+	pos_x -5632
+	pos_y 5888
+	scale 10.125
+}
+

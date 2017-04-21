@@ -1,0 +1,47 @@
+// IDs are unique inside the specific event(Community or Chance)
+// "Move" specifies how many boxes it moves from the current one
+// "Jump" specifies at what box to jump regardless of the current one
+// "Take" and "Give" refers to the specific player with current turn
+// "TakeFromPlayers" and "GiveToPlayers" refers to every other player but the one with current turn
+
+"Community"
+{
+    "1"
+    {
+        "Action"    "Move" // replace from "Move". Gonna do the same though
+        "Amount"    "3"
+        "Text"      "Special trip 3 streets forward!"
+        "Collect"   "False"
+    }
+    "2"
+    {
+        "Action"        "Jump"
+        "Position"      "14"
+        "Text"          "Plane to street 14!"
+    }
+    "3"
+    {
+        "Action"    "Take"
+        "Amount"    "200"
+        "Text"      "Gets to give to our beloved bank 200 gold!"
+
+    }
+    "4"
+    {
+        "Action"    "Give"
+        "Amount"    "200"
+        "Text"      "Receives from our beloved bank 200 gold!"
+    }
+    "5"
+    {
+        "Action"    "TakeFromPlayers"
+        "Amount"    "50"
+        "Text"      "Gets 50 gold from each player!"
+    }
+    "6"
+    {
+        "Action"    "GiveToPlayers"
+        "Amount"    "50"
+        "Text"      "Gives 50 gold to each player!"
+    }
+}

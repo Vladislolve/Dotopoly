@@ -1,0 +1,32 @@
+<root>
+    <styles>
+		<include src="file://{resources}/styles/custom_game/monopoly_notification.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/monopoly_notification.js" />
+	</scripts>
+		<Panel hittest="false" class="MonopolyNotification">
+			<Panel hittest="false" id="PlayerMoved" text="">
+				<Panel hittest="false" id="PlayerMoved_P1" text="">
+					<Label hittest="false" id="PlayerMoved_Text" class="TitleFont" text="#PlayerMovedText" html="true"/>
+				</Panel>
+			</Panel>
+			<Panel hittest="false" id="BoughtStreet" text="">
+				<Label hittest="false" id="BoughtStreet_Text" class="TitleFont" text="#BoughtStreetText" html="true"/>
+			</Panel>
+			<Panel hittest="false" id="CommunityEvent" text="">
+				<Label hittest="false" id="CommunityEvent_Title" class="TitleFont" text="#CommunityEventTitle"/>
+				<Label hittest="false" id="CommunityEvent_Text" class="TitleFont" text="#CommunityEventText" html="true"/>
+				<Label hittest="false" id="CommunityEvent_Prize" class="TitleFont" text="#CommunityEventPrize"/>
+			</Panel>
+			<Button id="EndTurn" class="EndTurn" onactivate="EndTurnCall()">
+				<Label text="#EndTurnButtonText" id="EndTurnButton_Text"/>
+			</Button>
+			<Panel hittest="false" id="StreetInfoHouse" text="">
+				<Label hittest="false" id="StreetInfoHouse_Text" class="TitleFont" text="#StreetInfoHouseText" html="true"/>
+			</Panel>
+			<Panel hittest="false" id="StreetInfoNoHouse" text="">
+				<Label hittest="false" id="StreetInfoNoHouse_Text" class="TitleFont" text="#StreetInfoNoHouseText" html="true"/>
+			</Panel>
+		</Panel>
+</root>

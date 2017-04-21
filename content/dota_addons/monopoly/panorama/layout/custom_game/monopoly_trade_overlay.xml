@@ -1,0 +1,56 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/custom_game/monopoly_trade_overlay.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/monopoly_trade_overlay.js" />
+	</scripts>
+
+	<Panel hittest="false" class="MonopolyTradeOverlay">
+		<Button id="TradeTitle" onactivate="SendTradeOverlayRequest()">
+			<Label id="TitleName_Text" text="#TitleNameText" />
+		</Button>
+
+		<Panel hittest="false" id="PanelOverlay" text="">
+			<Label hittest="false" id="PanelOverlay_Title" text="#PanelOverlayTitle"/>
+			<Panel hittest="false" id="LocalPlayerItems">
+				<Label text="#LocalPlayerOffersText" />
+				<TextEntry id="LocalPlayerGold" class="NumEntry" maxchars="5" placeholder="..." onChange="OnLocalGoldSubmit()" oninputsubmit="OnLocalGoldSubmit()" />
+			</Panel>
+			<Panel hittest="false" id="TargetPlayerItems">
+				<Label text="#TargetPlayerOffersText" />
+				<TextEntry id="TargetPlayerGold" class="NumEntry" maxchars="5" placeholder="#..." onblur="OnTargetGoldSubmit()" oninputsubmit="OnTargetGoldSubmit()" />
+			</Panel>
+			<Button id="Accept" class="ButtonClass" onactivate="OnSendTrade()">
+				<Label text="#AcceptText" />
+			</Button>
+			<Button id="Cancel" class="ButtonClass" onactivate="OnTradeCancel()">
+				<Label text="#CancelText" />
+			</Button>
+		</Panel>
+
+		<Panel hittest="false" id="TradeOfferPanel" class="PanelClass">
+			<Label text="#TradeOfferPanelText" id="TradeOfferPanel_Text" />
+			<Panel hittest="false" id="LocalPlayerOffers" class="PanelClass">
+				<Label text="#LocalPlayerOffersText" />
+				<Panel id="LocalGoldOffer" class="PanelClass">
+					<Label text="#LocalGoldOfferText" id="LocalGoldOffer_Text" />
+				</Panel>
+			</Panel>
+			<Panel hittest="false" id="TargetPlayerOffers" class="PanelClass">
+				<Label text="#TargetPlayerOffersText" />
+				<Panel id="TargetGoldOffer" class="PanelClass">
+					<Label text="#TargetGoldOfferText" id="TargetGoldOffer_Text"/>
+				</Panel>
+			</Panel>
+			<Button id="AcceptOffer" class="ButtonClass" onactivate="OnOfferAccepted()">
+				<Label text="#AcceptOfferText" />
+			</Button>
+			<Button id="DeclineOffer" class="ButtonClass" onactivate="OnOfferDeclined()">
+				<Label text="#DeclineOfferText" />
+			</Button>
+		</Panel>
+
+	</Panel>
+
+</root>

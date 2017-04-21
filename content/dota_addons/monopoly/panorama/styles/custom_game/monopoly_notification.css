@@ -1,0 +1,173 @@
+.MonopolyNotification
+{
+	width: 100%;
+	height: 100%;
+}
+
+#PlayerMoved
+{
+	flow-children: down;
+	horizontal-align: right;
+	transform: scaleX(1) scaleY(1);
+	margin-top: 300px;
+	margin-right: 50px;
+	text-shadow: 30px 30px 30px #121212;
+	background-color: #333333B0;
+	opacity: 0;
+}
+
+#PlayerMoved_Text
+{
+	color: white;
+	font-size: 25;
+}
+
+
+.movement_notification #PlayerMoved
+{
+	opacity: 1;
+	transform: scaleX(1) scaleY(1);
+	visibility: visible;
+}
+
+#BoughtStreet
+{
+	flow-children: down;
+	horizontal-align: center;
+	opacity: 0;
+	transform: scaleX(2) scaleY(2);
+	margin-top: 130px;
+	transition-property: transform, opacity;
+	transition-duration: 0.3s;
+	visibility: collapse;
+	border: 0px solid blue;
+}
+
+#BoughtStreet_Text
+{
+	color: white;
+	horizontal-align: center;
+	text-shadow: 4px 4px 4px #121212;
+	font-size: 24px;
+	font-weight: lighter;
+}
+
+.buy_notification #BoughtStreet
+{
+	opacity: 1;
+	transform: scaleX(1) scaleY(1);
+	visibility: visible;
+}
+
+#CommunityEvent
+{
+	flow-children: down;
+	horizontal-align: center;
+	margin-top: 250px;
+	margin-right: 200px;
+	visibility: collapse;
+}
+
+#CommunityEvent_Title
+{
+	color: yellow;
+	font-size: 50px;
+	text-shadow: 4px 4px 4px #121212;
+}
+
+#CommunityEvent_Text
+{
+	color: white;
+	font-size: 20px;
+	text-shadow: 4px 4px 4px #121212;
+}
+
+#CommunityEvent_Prize
+{
+	color: white;
+	font-size: 20px;
+	margin-top: 20px;
+	text-shadow: 4px 4px 4px #121212;
+}
+
+.community_event_trigger #CommunityEvent
+{
+	transform: scaleX(1) scaleY(1);
+	visibility: visible;
+}
+
+#EndTurn
+{
+	opacity: 0;
+	flow-children: down;
+	horizontal-align: left;
+	margin-top: 750px;
+	background-color: #ffd700;
+}
+
+#EndTurnButton_Text
+{
+	color: black;
+	font-size: 20;
+
+}
+
+.end_turn_button #EndTurn
+{
+	opacity: 1;
+	visibility: visible;
+}
+
+#StreetInfoHouse
+{
+	visibility: collapse;
+	flow-children: down;
+	horizontal-align: left;
+	transform: scaleX(1) scaleY(1);
+	margin-top: 300px;
+	margin-right: 50px;
+	text-shadow: 30px 30px 30px #121212;
+	background-color: #333333B0;
+	opacity: 0;
+}
+
+#StreetInfoHouse_Text
+{
+	color: white;
+	font-size: 20px;
+	text-shadow: 4px 4px 4px #121212;
+	opacity: 1;
+}
+
+.show_house_street_stats #StreetInfoHouse
+{
+	visibility: visible;
+	opacity: 1;
+}
+
+#StreetInfoNoHouse
+{
+	visibility: collapse;
+	flow-children: down;
+	horizontal-align: left;
+	transform: scaleX(1) scaleY(1);
+	margin-top: 300px;
+	margin-right: 50px;
+	text-shadow: 30px 30px 30px #121212;
+	background-color: #333333B0;
+	opacity: 0;
+}
+
+#StreetInfoNoHouse_Text
+{
+	color: white;
+	font-size: 20px;
+	text-shadow: 4px 4px 4px #121212;
+	opacity: 1;
+}
+
+.show_nohouse_street_stats #StreetInfoNoHouse
+{
+	visibility: visible;
+	opacity: 1;
+}
