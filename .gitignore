@@ -56,3 +56,4 @@ panorama_debugger.cfg
 
 #VSCode
 .vscode
+*.ini

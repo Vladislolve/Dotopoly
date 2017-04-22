@@ -1,4 +1,6 @@
 # Dotopoly
+[Steam Workshop page](http://steamcommunity.com/sharedfiles/filedetails/?id=622994776)
+
 Standard Monopoly game with Dota theme
 
 This mod as of right now follows the standard monopoly rules, though there's a couple of things 

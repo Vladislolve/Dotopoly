@@ -81,61 +81,6 @@
 {
 }
 
-.ScoreboardTeamWrapper.team_getting_worse
-{
-	animation-duration: ANIM_TIME;
-	animation-timing-function: ease-in-out;
-	animation-name: GettingWorseAnim;
-    z-index: -100;
-}
-
-.ScoreboardTeamWrapper.team_getting_better
-{
-	animation-duration: ANIM_TIME;
-	animation-timing-function: ease-in-out;
-	animation-name: GettingBetterAnim;
-    z-index: 100;
-}
-
-
-@keyframes 'GettingWorseAnim'
-{
-	0%
-	{
-		pre-transform-scale2d: 1;
-	}
-
-	50%
-	{
-		pre-transform-scale2d: 1;
-	}
-	
-	100%
-	{
-		pre-transform-scale2d: 1;
-	}
-}
-    
-
-@keyframes 'GettingBetterAnim'
-{
-	0%
-	{
-		pre-transform-scale2d: 1;
-	}
-
-	50%
-	{
-		pre-transform-scale2d: 1.05;
-	}
-	
-	100%
-	{
-		pre-transform-scale2d: 1;
-	}
-}
-
-
 #LogoAndScore
 {
     height: 100%;
@@ -266,40 +211,6 @@
 #ScoreRow
 {
     width: 100%;
-}
-
-#RespawnIndicator
-{
-	margin-top: 26px;
-	width: 42px;
-	height: 49px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-image: url( "file://{images}/custom_game/deathtimer_background.psd" );
-	horizontal-align: center;
-	transform: translateY(-30px);
-	opacity: 0;
-	transition-property: transform;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-out;
-}
-
-#RespawnTimer
-{
-    color: #e5460e;
-    width: 100%;
-	text-align: center;
-    vertical-align: bottom;
-	margin-bottom: 4px;
-    font-size: 18px;
-    text-shadow: 2px 2px 2px black;
-}
-
-.ScoreboardPlayerWrapper.player_dead #RespawnIndicator
-{
-	opacity: 1;
-	transform: translateY(0px);
 }
 
 #LocalPlayerIndicator
